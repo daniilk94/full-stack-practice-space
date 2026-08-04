@@ -1,0 +1,30 @@
+{
+  "notes": [
+    {
+      "content": "Test note",
+      "important": true,
+      "id": "ugFo2cCC1FI"
+    },
+    {
+      "content": "Is is true?",
+      "important": true,
+      "id": "aegD5Tysoiw"
+    },
+    {
+      "content": "Third note",
+      "important": true,
+      "id": "CrMVSzYuIXk"
+    },
+    {
+      "content": "Does this really work ?",
+      "important": false,
+      "id": "C2bBjKkPDTU"
+    },
+    {
+      "content": "HUESIOS",
+      "important": false,
+      "id": "Fgv_R5iiVIc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
