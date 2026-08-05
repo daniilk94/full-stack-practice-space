@@ -8,7 +8,6 @@ DELETE http://localhost:3001/api/notes/1
 ### add note
 POST http://localhost:3001/api/notes
 Content-Type: application/json
-
 {
   "content": "New note",
   "important": true

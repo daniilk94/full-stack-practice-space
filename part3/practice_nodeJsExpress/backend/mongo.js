@@ -6,7 +6,6 @@ if (process.argv.length < 3) {
 }
 
 const password = process.argv[2];
-
 const url = `mongodb+srv://admin:${password}@clust.vlxmraa.mongodb.net/noteApp?appName=Clust`;
 
 mongoose.set("strictQuery", false);
@@ -32,6 +31,7 @@ note.save().then((result) => {
   mongoose.connection.close();
 });
 */
+
 Note.find({}).then((result) => {
   result.forEach((note) => {
     console.log(note);

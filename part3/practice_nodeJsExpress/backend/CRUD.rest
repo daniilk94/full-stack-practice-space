@@ -3,5 +3,6 @@ POST http://localhost:3001/api/notes
 Content-Type: application/json
 
 {
-    "content": "John Johnes"
+    "content": "John Johnes",
+    "important": false
 }
