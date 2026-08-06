@@ -4,7 +4,7 @@ mongoose.set("strictQuery", false);
 
 const url = process.env.MONGODB_URI;
 
-console.log("Connecting to", url, "...");
+console.log("Connecting to MongoDB...");
 mongoose
   .connect(url, { family: 4 })
   .then((result) => {
@@ -15,7 +15,11 @@ mongoose
   });
 
 const noteSchema = new mongoose.Schema({
-  content: String,
+  content: {
+    type: String,
+    minLength: 5,
+    required: true,
+  },
   important: Boolean,
 });
 
