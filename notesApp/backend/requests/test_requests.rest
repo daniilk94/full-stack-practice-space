@@ -12,3 +12,13 @@ Content-Type: application/json
   "content": "New note",
   "important": true
 }
+
+### update note
+PUT  http://localhost:3001/api/notes/6a732f71fe1efda1c3250b49
+Content-Type: application/json
+
+{
+  "content": "HERE I AM AGAIN",
+  "important": true
+}
+
