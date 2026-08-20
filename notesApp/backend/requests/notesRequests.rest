@@ -8,9 +8,11 @@ DELETE http://localhost:3001/api/notes/1
 ### add note
 POST http://localhost:3001/api/notes
 Content-Type: application/json
+
 {
-  "content": "New note",
-  "important": true
+  "content": "The second note attached to user",
+  "important": true,
+  "userId": "6a86b8659f3197072cb70ee5"
 }
 
 ### update note

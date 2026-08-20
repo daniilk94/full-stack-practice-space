@@ -1,0 +1,12 @@
+### Get users
+GET http://localhost:3001/api/users
+
+### add new user
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "the_first",
+  "name": "The First User",
+  "password": "strongPassword"
+}
