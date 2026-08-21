@@ -70,17 +70,13 @@ describe('when there is initially some notes saved', () => {
       await user.save()
     })
     test('succeeds with valid data', async () => {
-      const usersAtStart = await helper.usersInDb()
-      const userAddingNoteId = usersAtStart[0].id
       const credentials = { username: 'root', password: 'secret' }
-      const token = await (
-        await api.post('/api/login').send(credentials)
-      ).body.token
+      const response = await api.post('/api/login').send(credentials)
+      const token = response.body.token
 
       const newNote = {
         content: 'async/await simplifies making async calls',
         important: true,
-        userId: userAddingNoteId,
       }
 
       await api
